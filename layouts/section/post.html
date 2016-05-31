@@ -3,7 +3,7 @@
         <article class="post">
         <header>
           <a class="post-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-          <p class="post-subtitle">{{ .Date.Format "Monday, January 2, 2006" }} - {{ range .Params.tags }} <a href="{{ $.Site.BaseURL }}/tags/{{ . | urlize }}">{{ . }}</a> {{ end }}</p>
+          <p class="post-subtitle">{{ .Date.Format "Monday, January 2, 2006" }} - {{ range .Params.tags }} <a href="/tags/{{ . | urlize }}">{{ . }}</a> {{ end }}</p>
         </header>
         <section>
           {{ .Summary }}
