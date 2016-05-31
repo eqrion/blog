@@ -1,0 +1,135 @@
+/* Base Style */
+
+body {
+	font-family: sans-serif;
+	line-height: 1.6;
+}
+@media (min-width: 768px) {
+	.content {
+		margin-left: 8.3333333%;
+		width: 83.3333333%;
+	}
+}
+@media(min-width: 992px) {
+	.content {
+		margin-left: 16.6666666%;
+		width: 66.6666666%;
+	}
+}
+@media(min-width: 1400px) {
+	.content {
+		margin-left: 28%;
+		width: 44%;
+	}
+}
+
+/* Header */
+
+nav {
+	margin: 1em auto 1em auto;
+	text-align: center;	
+}
+.large-title {
+	font-family: 'Press Start 2P', serif;
+	font-size: 3em;
+    text-decoration: none;
+	color: black;
+}
+.large-title:hover {
+	color: #34495e;
+}
+.large-title:active {
+    text-decoration: underline;
+	color: #34495e;
+}
+
+.small-title {
+	font-family: 'Press Start 2P', serif;
+	font-size: 1em;
+    text-decoration: none;
+	margin: auto 1em auto 1em;
+	color: black;
+}
+.small-title:hover {
+	color: #34495e;
+}
+.small-title:active {
+    text-decoration: underline;
+	color: #34495e;
+}
+
+/* Footer */
+
+footer {
+	margin: 1em auto 1em auto;
+	text-align: center;	
+}
+.footer-link {
+    text-decoration: none;
+	font-size: 2em;
+	font-weight: bold;
+	margin: 1.5em;
+	color: black;
+}
+.footer-link:hover {
+	color: #34495e;
+}
+.footer-link:active {
+    text-decoration: underline;
+	color: #34495e;
+}
+
+/* Post */
+
+.post {
+	margin-bottom: 0.5em;
+}
+.post-title {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+    text-decoration: none;
+	font-weight: bold;
+	font-size: 2em;
+	color: black;
+}
+.post-title:hover {
+	color: #34495e;
+}
+.post-title:active {
+    text-decoration: underline;
+	color: #34495e;
+}
+.post-subtitle {
+	font-size: 1.15em;
+	font-style: italic;
+	text-align: center;
+	margin: 0 auto;
+}
+.tag-link {
+	display: block;
+    text-decoration: none;
+	font-size: 1em;
+	color: black;
+}
+.tag-link:hover {
+	color: #34495e;
+}
+.tag-link:active {
+    text-decoration: underline;
+	color: #34495e;
+}
+.post-readmore {
+	display: block;
+    text-decoration: none;
+	font-style: italic;
+	font-size: 1em;
+	color: black;
+}
+.post-readmore:hover {
+	color: #34495e;
+}
+.post-readmore:active {
+    text-decoration: underline;
+	color: #34495e;
+}
