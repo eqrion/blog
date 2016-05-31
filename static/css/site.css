@@ -4,6 +4,9 @@ body {
 	font-family: sans-serif;
 	line-height: 1.6;
 }
+th {
+	padding: 0.5em;
+}
 @media (min-width: 768px) {
 	.content {
 		margin-left: 8.3333333%;
