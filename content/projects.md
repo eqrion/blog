@@ -8,4 +8,4 @@ The source for all of my projects can be found here:
 * [kayak](https://github.com/rlhunt/kayak) - C++ data structures and algorithms library
 * [sensor](https://github.com/rlhunt/sensor) - a rough C software renderer (mostly just a rasterizer)
 
-I try and update this with any new projects as they happen.
+This actual site was hand made, using [static templates](https://gohugo.io), and you can view the source [here](https://github.com/rlhunt/dreamingofbits).
