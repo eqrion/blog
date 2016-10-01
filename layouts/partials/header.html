@@ -17,11 +17,13 @@
 			ga('send', 'pageview');
 		</script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	</head>	
+	</head>
 	<body>
-		<nav>
-			<a class="large-title" href="/">{{ .Site.Title }}</a><br>
-			<a class="small-title" href="/projects">Projects</a>
-			<a class="small-title" href="/about">About</a>
-		</nav>
+		<header>
+			<a class="large-title" href="/">{{ .Site.Title }}</a>
+			<nav style="float: right">
+				<a class="small-title" href="/projects">Projects</a>
+				<a class="small-title" href="/about">About</a>
+			</nav>
+		</header>
 		<section class="content">

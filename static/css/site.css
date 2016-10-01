@@ -1,138 +1,90 @@
 /* Base Style */
 
-body {
-	font-family: sans-serif;
-	line-height: 1.6;
-}
-th {
-	padding: 0.5em;
-}
 @media (min-width: 768px) {
-	.content {
+	body {
 		margin-left: 8.3333333%;
 		width: 83.3333333%;
 	}
 }
 @media(min-width: 992px) {
-	.content {
+	body {
 		margin-left: 16.6666666%;
 		width: 66.6666666%;
 	}
 }
 @media(min-width: 1400px) {
-	.content {
+	body {
 		margin-left: 28%;
 		width: 44%;
 	}
 }
 
+body {
+	font-family: sans-serif;
+	line-height: 1.8;
+}
+th {
+	padding: 0.5em;
+}
+a {
+	color: #0096cc;
+}
+a:hover {
+	color: #007199;
+}
+
 /* Header */
 
-nav {
-	margin: 1em auto 1em auto;
-	text-align: center;	
+body > header {
+	line-height: 3rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
+
 .large-title {
-	font-family: 'Press Start 2P', serif;
-	font-size: 3em;
+	font-size: 2rem;
+	font-family: sans-serif;
+	font-weight: bold;
     text-decoration: none;
-	color: black;
-}
-.large-title:hover {
-	color: #34495e;
+	color: #668baf;
 }
 .large-title:active {
     text-decoration: underline;
-	color: #34495e;
+    color: #4f6f8e;
 }
 
 .small-title {
-	font-family: 'Press Start 2P', serif;
-	font-size: 1em;
+	font-size: 1.2rem;
+	font-family: sans-serif;
     text-decoration: none;
-	margin: auto 1em auto 1em;
-	color: black;
-}
-.small-title:hover {
-	color: #34495e;
+	color: #474747;
+	margin-right: 1rem;
 }
 .small-title:active {
     text-decoration: underline;
-	color: #34495e;
-}
-
-/* Footer */
-
-footer {
-	margin: 1em auto 1em auto;
-	text-align: center;	
-}
-.footer-link {
-    text-decoration: none;
-	font-size: 2em;
-	font-weight: bold;
-	margin: 1.5em;
-	color: black;
-}
-.footer-link:hover {
-	color: #34495e;
-}
-.footer-link:active {
-    text-decoration: underline;
-	color: #34495e;
 }
 
 /* Post */
 
 .post {
-	margin-bottom: 0.5em;
+	margin-bottom: 2rem;
+	font-size: 1.1rem;
 }
+
 .post-title {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
     text-decoration: none;
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 2rem;
 	color: black;
-}
-.post-title:hover {
-	color: #34495e;
 }
 .post-title:active {
     text-decoration: underline;
 	color: #34495e;
 }
+
 .post-subtitle {
-	font-size: 1.15em;
-	font-style: italic;
-	text-align: center;
 	margin: 0 auto;
-}
-.tag-link {
-	display: block;
-    text-decoration: none;
-	font-size: 1em;
-	color: black;
-}
-.tag-link:hover {
-	color: #34495e;
-}
-.tag-link:active {
-    text-decoration: underline;
-	color: #34495e;
-}
-.post-readmore {
-	display: block;
-    text-decoration: none;
+	font-size: 1.15rem;
 	font-style: italic;
-	font-size: 1em;
-	color: black;
-}
-.post-readmore:hover {
-	color: #34495e;
-}
-.post-readmore:active {
-    text-decoration: underline;
-	color: #34495e;
+	color: #606060;
 }
