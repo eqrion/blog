@@ -1,5 +1,9 @@
 /* Base Style */
 
+body {
+		margin-left: 6%;
+		width: 88%;
+}
 @media (min-width: 768px) {
 	body {
 		margin-left: 8.3333333%;
@@ -45,26 +49,27 @@ header > nav {
 	float: right;
 }
 
-.large-title {
+.title {
 	font-size: 2rem;
 	font-family: sans-serif;
 	font-weight: bold;
     text-decoration: none;
 	color: #668baf;
+	margin-right: 2rem;
 }
-.large-title:active {
+.title:active {
     text-decoration: underline;
     color: #4f6f8e;
 }
 
-.small-title {
+.top-link {
 	font-size: 1.2rem;
 	font-family: sans-serif;
     text-decoration: none;
 	color: #474747;
 	margin-right: 1rem;
 }
-.small-title:active {
+.top-link:active {
     text-decoration: underline;
 }
 

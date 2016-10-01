@@ -1,3 +1,8 @@
++++
+title = "Projects"
+draft = false
++++
+
 Every once in a while I get enough time to work on a side project. They're nothing revolutionary. But sometimes they can be kind of neat. I try and write an article when that [happens](../tags/project).
 
 The source for all of my projects can be found on [Github](https://github.com/rlhunt):
