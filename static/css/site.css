@@ -41,6 +41,10 @@ body > header {
 	margin-bottom: 2rem;
 }
 
+header > nav {
+	float: right;
+}
+
 .large-title {
 	font-size: 2rem;
 	font-family: sans-serif;
