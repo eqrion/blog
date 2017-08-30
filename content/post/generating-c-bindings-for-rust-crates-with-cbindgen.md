@@ -13,19 +13,17 @@ Rust is a great language for doing tasks normally done in C/C++. While it has a 
 
 The neat thing is that because of Rust's ability to have a C FFI, Rust can be used to rewrite parts of an existing C/C++ application without having to rewrite the whole thing.
 
-<!--more-->
-
 This means that you can get some of the benefits of Rust, without having to rewrite the whole world (which is often infeasible and tends to introduce new bugs).
+
+<!--more-->
 
 There's a project in Firefox with this exact idea called [Oxidation](https://wiki.mozilla.org/Oxidation). I've spent some time working on a related project called [Quantum Render](https://wiki.mozilla.org/Platform/GFX/Quantum_Render).
 
 One of the challenges for integration projects like this is writing bindings for the interface between languages.
 
-To write bindings for a Rust library, you first have to write the FFI in Rust, and then write an equivalent set of C/C++ declarations in a header. This is time consuming, boring, and error prone.
+When working on Quantum Render, we tracked down more than one nasty bug to an incorrect definition in our hand written binding headers.
 
-When working on Quantum Render, we tracked down more than one nasty bug to an incorrect definition in our hand written bindings.
-
-Since no one liked writing bindings, and no one liked finding these bugs, we decided to write a new tool to automate this away so we wouldn't have to deal with it again.
+Since no one liked writing binding headers, and no one liked finding these bugs, we decided to write a tool to automate this away so we wouldn't have to deal with it again.
 
 ## `cbindgen`
 
