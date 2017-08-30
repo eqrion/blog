@@ -1,5 +1,5 @@
 +++
-date = "2017-08-18T21:51:26-05:00"
+date = "2017-08-30T21:51:26-05:00"
 title = "Generating C bindings for Rust crates with cbindgen"
 draft = false
 tags = ["rust", "ffi", "project"]
@@ -11,19 +11,19 @@ disqusid = "1150"
 
 Rust is a great language for doing tasks normally done in C/C++. While it has a minimal runtime and zero-cost abstractions, it also has guaranteed memory safety and high level language features that make programming easier.
 
-This is a good combination and there are a lot of projects being created to rewrite things from C/C++ into Rust.
-
 The neat thing is that because of Rust's ability to have a C FFI, Rust can be used to rewrite parts of an existing C/C++ application without having to rewrite the whole thing.
+
+<!--more-->
 
 This means that you can get some of the benefits of Rust, without having to rewrite the whole world (which is often infeasible and tends to introduce new bugs).
 
-There's a project in Firefox with this exact idea called [Oxidation](https://wiki.mozilla.org/Oxidation). I've spend some time working on a related project to that called [Quantum Render](https://wiki.mozilla.org/Platform/GFX/Quantum_Render).
+There's a project in Firefox with this exact idea called [Oxidation](https://wiki.mozilla.org/Oxidation). I've spent some time working on a related project called [Quantum Render](https://wiki.mozilla.org/Platform/GFX/Quantum_Render).
 
-One of the challenges for integration projects like that is the interface between languages where you have to write bindings.
+One of the challenges for integration projects like this is writing bindings for the interface between languages.
 
-When writing bindings for a Rust library, you first have to write the FFI in Rust, and then write an equivalent set of declarations in C/C++. This is time consuming, boring, and error prone.
+To write bindings for a Rust library, you first have to write the FFI in Rust, and then write an equivalent set of C/C++ declarations in a header. This is time consuming, boring, and error prone.
 
-When working on Quantum Render, we tracked down more than one nasty bug to an incorrect definition in our hand written header.
+When working on Quantum Render, we tracked down more than one nasty bug to an incorrect definition in our hand written bindings.
 
 Since no one liked writing bindings, and no one liked finding these bugs, we decided to write a new tool to automate this away so we wouldn't have to deal with it again.
 
@@ -35,7 +35,7 @@ Introducing [`cbindgen`](https://github.com/eqrion/cbindgen/), a project for gen
 
 `cbindgen` will parse a single source or a whole library (including dependent crates) and gather all `extern "C"` functions, structs, and enums, and generate matching C/C++ definitons.
 
-All you need to do then is design an FFI in Rust for your library, and `cbindgen` will generate a header for you to use in your C or C++ project.
+All you need to do is design an FFI in Rust for your library, and `cbindgen` will generate a header for you to use in your C or C++ project.
 
 Designing an FFI isn't a trivial process of course, but `cbindgen` makes it easier by elliminating one step in the process.
 
@@ -159,7 +159,7 @@ So there you can see how `cbindgen` handles a straightforward example, let's tak
 
 Generic types are common in Rust and are fully capable of being used in FFI when marked `#[repr(C)]`.
 
-The challenge is manually writing bindings for each instantiation of a generic struct.
+The challenge is manually writing bindings for each instantiation of the generic type.
 
 Thankfully, `cbindgen` can do this for us.
 
@@ -227,7 +227,7 @@ struct Buffer<int32_t> : public Buffer_i32 {
 
 ### 2. Type aliases
 
-It's also common in Rust to use `type` aliases to give types new names.
+It's also common in Rust to use `type` aliases to give a type a different name.
 
 `cbindgen` also understands these and will generate a `typedef` when possible.
 
@@ -270,7 +270,7 @@ void print_int_buffer(IntBuffer buf);
 } // extern "C"
 ```
 
-The nice part of this is that you're still able to refer to `Buffer_i32` if necessary or use `IntBuffer`. They both refer to the same type, as they do in Rust.
+The nice part of generating typedefs is that you're still able to refer to `Buffer_i32` if necessary or use `IntBuffer`. They both refer to the same type, as they do in Rust.
 
 ### 3. Misc.
 
@@ -278,7 +278,7 @@ There are a lot of smaller features that are easier to just list without example
 
 1. Support for C or C++ language output
 2. Renaming of struct fields, enum variants, function arguments to different styles
-3. Generation of `#ifdef`'s for #[cfg] attributes
+3. Generation of `#ifdef`'s for `#[cfg]` attributes
 4. Generation of C++ operators for simple structs
 5. Output documentation comments into bindings file
 6. Configuration to disable or enable any of the above if desired :)
@@ -294,7 +294,7 @@ There are definitely improvements to be made on that front, but what gets me exc
 
 1. What if we could get a class definition from a struct and impl?
 2. What if we could expose Rust's tagged union with a wrapper class?
-3. What if we could use simple #[repr(rust)] structs from C/C++?
+3. What if we could use simple `#[repr(rust)]` structs from C/C++?
 
 There's a lot of work to be done here, but right now we're just scratching the surface.
 
