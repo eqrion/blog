@@ -7,10 +7,18 @@ tags = ["networking", "project"]
 disqusid = "1092"
 +++
 
-I've always been interested in how networking protocols work, and how they can be reliable and also efficient. After some reading, I decided the best way to learn about it would be for me to have to write one. It turned out to be much more difficult than I anticipated, and I only really 'got' the idea on my third try.
+I've always been interested in how networking protocols work, and how they can be reliable and also efficient. After some reading, I decided the best way to learn about it would be for me to have to write one.
 
-If you do research on this topic, you'll find guides that describe all the important ideas, such as [ARQ's](https://en.wikipedia.org/wiki/Automatic_repeat_request) and [sliding window protocols](https://en.wikipedia.org/wiki/Sliding_window_protocol), and they do a good job at describing the general idea of what they accomplish and how. But all the references I found used very opaque terminology and didn't go into enough detail to actually implement the protocols. This was especially true for Sliding Window Protocols. I wrote this to try and provide an end to end guide on how some reliable networking protocols operate. It goes into enough depth to cover most of the implementation details that arise, but code is not actually discussed. If you are looking for code, the c++ library created along with this article can be found [here](https://github.com/rlhunt/netmod). Hopefully this will provide some help for anyone else seeking to do this in the future!
+It turned out to be much more difficult than I anticipated, and I only really 'got' the idea on my third try.
+
+If you do research on this topic, you'll find guides that describe all the important ideas, such as [ARQ's](https://en.wikipedia.org/wiki/Automatic_repeat_request) and [sliding window protocols](https://en.wikipedia.org/wiki/Sliding_window_protocol), and they do a good job at describing the general idea of what they accomplish and how. But all the references I found used very opaque terminology and didn't go into enough detail to actually implement the protocols.
+
+This was especially true for Sliding Window Protocols. I wrote this to try and provide an end to end guide on how some reliable networking protocols operate. It goes into enough depth to cover most of the implementation details that arise, but code is not actually discussed.
+
+If you are looking for code, the c++ library created along with this article can be found [here](https://github.com/rlhunt/netmod). Hopefully this will provide some help for anyone else seeking to do this in the future!
+
 <!--more-->
+
 Before we get into the details of the different ways to send data reliably, we need to talk about the different types of reliability and the current protocols out there. If this is familiar to you, feel free to skip ahead.
 
 ## Reliability

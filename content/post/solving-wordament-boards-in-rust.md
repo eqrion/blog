@@ -7,9 +7,17 @@ tags = ["rust", "project"]
 disqusid = "1104"
 +++
 
-After a short break from coding for school, I finally got enough free time to finish a project. One of my favorite puzzle games is game called [Wordament](http://www.wordament.com/). It's a bit old now, but it still has an active community. The game is like Boggle, you get points for building a word across tiles. To be honest, I'm not very good at it. So I thought, why not write a program to give me some answers? So I did. I know that there are other solvers out there, but I just thought it'd be fun to hack together. You can find the end results [here](https://github.com/rlhunt/wordament)!
+After a short break from coding for school, I finally got enough free time to finish a project. One of my favorite puzzle games is game called [Wordament](http://www.wordament.com/). It's a bit old now, but it still has an active community. The game is like Boggle, you get points for building a word across tiles.
+
+To be honest, I'm not very good at it. So I thought, why not write a program to give me some answers? So I did. I know that there are other solvers out there, but I just thought it'd be fun to hack together.
+
 <!--more-->
-The program is written in [Rust](https://www.rust-lang.org/) and solves a Wordament board by recursively building words across tiles. There are a lot of combinations of letters on a board, so I limited the search by using a [Trie](https://en.wikipedia.org/wiki/Trie) built from an English dictionary. Using the Trie, we can always know whether adding a tile to the current word will be a prefix for a solution. If it doesn't then that line of computation is dropped. With this approach, the speed of the program is very fast. It solves boards almost instantly.
+
+You can find the end results [here](https://github.com/rlhunt/wordament)!
+
+The program is written in [Rust](https://www.rust-lang.org/) and solves a Wordament board by recursively building words across tiles. There are a lot of combinations of letters on a board, so I limited the search by using a [Trie](https://en.wikipedia.org/wiki/Trie) built from an English dictionary.
+
+Using the Trie, we can always know whether adding a tile to the current word will be a prefix for a solution. If it doesn't then that line of computation is dropped. With this approach, the speed of the program is very fast. It solves boards almost instantly.
 
 The one limiting factor right now is finding a good dictionary. I've built a simple dictionary using [Scowl](http://wordlist.aspell.net/), but there are some false negatives and some false positives. If anyone knows of a better dictionary, please let me know! Overall though, most words are found. The program also support Digrams, Either/Or, Suffixes, and Prefixes, which I think is really cool.
 
