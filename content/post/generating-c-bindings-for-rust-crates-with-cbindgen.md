@@ -12,7 +12,7 @@ disqusid = "1150"
 
 Rust is a great language for doing tasks normally done in C/C++. While it has a minimal runtime and zero-cost abstractions, it also has guaranteed memory safety and high level language features that make programming easier.
 
-The neat thing is that because of Rust's ability to have a C FFI, Rust can be used to rewrite parts of an existing C/C++ application without having to rewrite the whole thing.
+Another neat thing about Rust is its ability to have a C FFI. Rust can be used to rewrite parts of an existing C/C++ application without having to rewrite the whole thing.
 
 This means that you can get some of the benefits of Rust, without having to rewrite the whole world (which is often infeasible and tends to introduce new bugs).
 
@@ -20,9 +20,9 @@ This means that you can get some of the benefits of Rust, without having to rewr
 
 There's a project in Firefox with this exact idea called [Oxidation](https://wiki.mozilla.org/Oxidation). I've spent some time working on a related project called [Quantum Render](https://wiki.mozilla.org/Platform/GFX/Quantum_Render).
 
-One of the challenges for integration projects like this is writing bindings for the interface between languages.
+One of the challenges for integration projects like these involves writing bindings for interfacing between languages.
 
-When working on Quantum Render, we tracked down more than one nasty bug to an incorrect definition in our hand written binding headers.
+When working on Quantum Render, we tracked down more than one nasty bug caused by an incorrect definition in our handwritten binding headers.
 
 Since no one liked writing binding headers, and no one liked finding these bugs, we decided to write a tool to automate this away so we wouldn't have to deal with it again.
 
@@ -143,7 +143,7 @@ Trebuchet* trebuchet_new();
 } // extern "C"
 ```
 
-Which is exactly what we'd like to see.
+This is exactly what we'd like to see.
 
 1. `Ammo` is given proper size and values
 2. `Target` has all the required fields and layout
@@ -152,11 +152,11 @@ Which is exactly what we'd like to see.
 
 ## Features
 
-So there you can see how `cbindgen` handles a straightforward example, let's take a look at some more advanced usage.
+We saw how `cbindgen` handles a straightforward example, let's take a look at some more advanced usage.
 
 ### 1. Generic structs
 
-Generic types are common in Rust and are fully capable of being used in FFI when marked `#[repr(C)]`.
+Generic types are common in Rust and are fully capable of being used in an FFI when marked `#[repr(C)]`.
 
 The challenge is manually writing bindings for each instantiation of the generic type.
 
@@ -283,13 +283,13 @@ There are a lot of smaller features that are easier to just list without example
 6. Configuration to disable or enable any of the above if desired :)
 7. Annotation system to override the configuration for a specific item
 
-`cbindgen` is very configurable, so there is most likely something helpful for your unique case. And if there isn't feel free to file an issue or open a PR.
+`cbindgen` is very configurable, so it can most likely provide something helpful for your unique case. And if there isn't feel free to file an issue or open a PR.
 
 ## Future Work
 
-Right now `cbindgen` is good at generating bindings for an already existing and correct FFI.
+Right now `cbindgen` is good at generating bindings for an already existing FFI.
 
-There are definitely improvements to be made on that front, but what gets me excited is about the ability to codegen a correct FFI for idiomatic Rust code.
+There are definitely improvements to be made on that front, but what gets me excited is the possibility of generating a correct FFI for Rust code.
 
 1. What if we could get a class definition from a struct and impl?
 2. What if we could expose Rust's tagged union with a wrapper class?
@@ -299,9 +299,9 @@ There's a lot of work to be done here, but right now we're just scratching the s
 
 ## Conclusion
 
-I'd like to invite anyone who is working on a Rust integration project to give `cbindgen` a try, and please file issues for any bugs or difficulties you run into.
+I'd like to invite anyone who is working on a Rust integration project to give `cbindgen` a try, and please file [issues](https://github.com/eqrion/cbindgen/issues) for any bugs or difficulties you run into.
 
-I'd love to make `cbindgen` as robust and battle tested as possible, so I appreciate every issue.
+I'd love to make `cbindgen` as robust and battle-tested as possible, so I appreciate all feedback.
 
 If you're interested in contributing, feel free to comment on any issue and I will provide guidance to the best of my ability.
 
