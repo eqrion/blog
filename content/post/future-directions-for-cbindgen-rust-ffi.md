@@ -10,7 +10,9 @@ disqusid = "1151"
 <link href="/css/prism.css" rel="stylesheet" />
 <script src="/js/prism.js"></script>
 
-It's been over a [year since](/post/generating-c-bindings-for-rust-crates-with-cbindgen) I first wrote about `cbindgen`. A lot has happened since then. We've had a few new features added ([tagged enums!](https://twitter.com/Gankro/status/958071737492627457)), it's seen some good use ([25k all time downloads!](https://crates.io/crates/cbindgen)), and there was a talk given at a [rust berlin meetup](https://youtu.be/-IQ62T0bllw?t=5631)!
+It's been over a year since I first wrote about [`cbindgen`](https://github.com/eqrion/cbindgen). A lot has happened since then.
+
+We've had a few new features added ([tagged enums!](https://twitter.com/Gankro/status/958071737492627457)), it's seen some good use ([25k all time downloads!](https://crates.io/crates/cbindgen)), and there was a talk given at a [rust berlin meetup](https://youtu.be/-IQ62T0bllw?t=5631)!
 
 This project started out as a quick fix for a problem we were facing at Mozilla. I thought others might find it useful so I open sourced it. It's the first time I've ever ran an open source project, and I've learned a lot.
 
