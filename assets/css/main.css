@@ -44,6 +44,11 @@ a:hover {
   border-bottom: 2px solid #f0f0f0;
 }
 
+.hero {
+  display: block;
+  width: 100%;
+}
+
 /* header */
 
 body > header {
