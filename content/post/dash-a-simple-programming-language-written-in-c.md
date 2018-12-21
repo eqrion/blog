@@ -338,6 +338,7 @@ Overall I'm very happy with the project. It's not exactly groundbreaking, but it
 
 Questions, comments, found a bug? Leave a comment below!
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script  type="text/javascript">
        $(window).load(function () {
        $(document).delegate('.dash-sandbox', 'keydown', function (e) {
