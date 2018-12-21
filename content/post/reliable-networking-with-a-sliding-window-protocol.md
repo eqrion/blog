@@ -119,13 +119,13 @@ With these conditions in place, we can calculate the logical difference using th
 ```c
 // leading number is ahead of trailing number
 unsigned modDifference(unsigned leadingNumber, unsigned trailingNumber, unsigned highestPossibleNumber) {
-	if (leadingNumber < trailingNumber) {
-		// leading number wrapped around the end
-		return (highestPossibleNumber + 1) - trailingNumber + leadingNumber;
-	} else {
-		// leading number has not wrapped around the end
-		return leadingNumber - trailingNumber;
-	}
+  if (leadingNumber < trailingNumber) {
+    // leading number wrapped around the end
+    return (highestPossibleNumber + 1) - trailingNumber + leadingNumber;
+  } else {
+    // leading number has not wrapped around the end
+    return leadingNumber - trailingNumber;
+  }
 }
 ```
 
@@ -133,9 +133,9 @@ Consider the following situations when we have 4 possible numbers and a window s
 
 | A (Leading Number) | B (Trailing Number) | Difference of A, B |     |
 | :----------------: | :-----------------: | :----------------: | :-- |
-| 1 | 1 | 0	| A >= B, so no wrap around. We just do A - B = 0. |
-| 2 | 1 | 1	| A >= B, so no wrap around. We just do A - B = 1. |
-| 3 | 1 | 2	| A >= B, so no wrap around. We just do A - B = 2. |
+| 1 | 1 | 0 | A >= B, so no wrap around. We just do A - B = 0. |
+| 2 | 1 | 1 | A >= B, so no wrap around. We just do A - B = 1. |
+| 3 | 1 | 2 | A >= B, so no wrap around. We just do A - B = 2. |
 | 0 | 1 | 3 | A < B, so A has wrapped around. We take (3 + 1) - B + A = 3. |
 
 Now consider what happens if we violate the 3rd condition and have 4 numbers and a window size of 4,
