@@ -3,8 +3,6 @@ title = "About"
 draft = false
 +++
 
-Hey, you're reading my blog. Welcome!
-
 My name is Ryan Hunt and I work on the platform graphics team for Firefox at [Mozilla](https://mozilla.org).
 
 I usually write about native code, graphics, and networking.
