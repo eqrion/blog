@@ -1,8 +1,8 @@
-/* Base Style */
+/* common */
 
 body {
-    margin-left: 6%;
-    width: 88%;
+  margin-left: 6%;
+  width: 88%;
 }
 @media (min-width: 768px) {
   body {
@@ -24,6 +24,7 @@ body {
 }
 
 body {
+  background-color: #fafafa;
   font-family: sans-serif;
   line-height: 1.5;
 }
@@ -37,7 +38,13 @@ a:hover {
   color: #007199;
 }
 
-/* Header */
+.divider {
+  margin-top: 1.75em;
+  margin-bottom: 0.75em;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* header */
 
 body > header {
   line-height: 3rem;
@@ -65,15 +72,25 @@ header > nav {
 .top-link {
   font-size: 1.2rem;
   font-family: sans-serif;
-    text-decoration: none;
-  color: #474747;
+  text-decoration: none;
+  color: #272727;
   margin-right: 1rem;
 }
 .top-link:active {
     text-decoration: underline;
 }
 
-/* Post */
+/* footer */
+
+footer {
+  font-size: 0.8em;
+  text-align: center;
+  color: #777;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+/* post */
 
 .post {
   margin-bottom: 2rem;
@@ -87,7 +104,7 @@ header > nav {
   color: black;
 }
 .post-title:active {
-    text-decoration: underline;
+  text-decoration: underline;
   color: #34495e;
 }
 
