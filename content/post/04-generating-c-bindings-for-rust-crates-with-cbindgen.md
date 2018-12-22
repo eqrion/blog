@@ -1,6 +1,9 @@
 +++
 date = "2017-08-30T21:51:26-05:00"
 title = "Generating C bindings for Rust crates with cbindgen"
+aliases = [
+  "/posts/generating-c-bindings-for-rust-crates-with-cbindgen/",
+]
 draft = false
 tags = ["rust", "ffi", "project"]
 description = "Introducing cbindgen, a project for generating a C/C++ header for a Rust library. See also the popular bindgen project which works in the opposite direction. cbindgen will parse a single source or a whole library (including dependent crates) and gather all extern C functions, structs, and enums, and generate matching C/C++ definitons."

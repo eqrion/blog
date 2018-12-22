@@ -3,7 +3,7 @@ title = "About"
 draft = false
 +++
 
-<img class="hero" src="/images/headshot.jpg" alt="Ryan on Mt. Haleakala."/>
+<img class="hero" src="/images/headshot.jpg" alt="Ryan on Mt. Haleakalā."/>
 
 My name is Ryan Hunt and that's a picture of me on Mt. Haleakalā in Maui.
 

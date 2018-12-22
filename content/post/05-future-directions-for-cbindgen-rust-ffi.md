@@ -1,6 +1,9 @@
 +++
 date = "2018-10-05T08:08:20-05:00"
 title = "Future directions for cbindgen (rust-ffi)"
+aliases = [
+  "/posts/future-directions-for-cbindgen-rust-ffi/",
+]
 draft = false
 tags = ["rust", "ffi", "project"]
 description = ""

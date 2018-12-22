@@ -1,6 +1,9 @@
 +++
 date = "2018-12-10T08:08:20-05:00"
 title = "EdgeHTML and control of the web platform"
+aliases = [
+  "/posts/edgehtml-and-control-of-the-web-platform/",
+]
 draft = false
 tags = ["web", "chrome"]
 description = ""

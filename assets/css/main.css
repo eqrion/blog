@@ -49,6 +49,13 @@ a:hover {
   width: 100%;
 }
 
+.readmore {
+  font-family: sans-serif;
+  /*font-style: italic;*/
+  text-decoration: unset;
+  display: block;
+}
+
 /* header */
 
 body > header {

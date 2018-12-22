@@ -10,7 +10,7 @@ The source for all of my projects can be found on [Github](https://github.com/eq
 * [cbindgen](https://github.com/eqrion/cbindgen) - A project for generating C/C++ bindings for Rust code
 * [wordament](https://github.com/eqrion/wordament) - A cracker for wordament boards written in Rust
 * [dash](https://github.com/eqrion/dash) - an end to end implementation of a programming language and companion vm, written in C
-* [netmod](https://github.com/eqrion/netmod) - C++ reliable networking protocol
+* [netmod](https://github.com/eqrion/netmod) - C++ reliable networking protocol experiment
 * [sensor](https://github.com/eqrion/sensor) - a C software rasterizer experiment
 
 This site is made with [Hugo](https://gohugo.io), and you can view the source [here](https://github.com/eqrion/dreamingofbits).

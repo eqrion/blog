@@ -1,3 +1,6 @@
 baseurl = "https://dreamingofbits.com/"
 languageCode = "en-us"
 title = "Ryan Hunt's Blog"
+
+[permalinks]
+post = "/:title/"
