@@ -16,7 +16,7 @@ To be honest, I'm not very good at it. So I thought, why not write a program to 
 
 <!--more-->
 
-You can find the end results [here](https://github.com/rlhunt/wordament)!
+You can find the end results [here](https://github.com/eqrion/wordament)!
 
 The program is written in [Rust](https://www.rust-lang.org/) and solves a Wordament board by recursively building words across tiles. There are a lot of combinations of letters on a board, so I limited the search by using a [Trie](https://en.wikipedia.org/wiki/Trie) built from an English dictionary.
 

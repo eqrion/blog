@@ -251,7 +251,7 @@ def main : () -> (integer)
 ## Behind the Scenes - The Library
 The Dash core library is written in C and is divided into two parts. A VM that executes procedures of bytecode, and a compiler that generates those procedures.
 
-The VM is a register based machine that executes procedures of contiguous bytecode. A register is just a machine word sized slot for any kind of data. A procedure takes in a certain amount of registers as input, uses a certain amount of registers for calculations, then returns a certain sized range of registers as output. Instructions operate on registers using an index encoded in the instruction, and currently only operations on signed integers and floating point numbers are supported. A full list of instructions can be found [here](https://github.com/rlhunt/dash/blob/master/dash/src/vm_internal.h).
+The VM is a register based machine that executes procedures of contiguous bytecode. A register is just a machine word sized slot for any kind of data. A procedure takes in a certain amount of registers as input, uses a certain amount of registers for calculations, then returns a certain sized range of registers as output. Instructions operate on registers using an index encoded in the instruction, and currently only operations on signed integers and floating point numbers are supported. A full list of instructions can be found [here](https://github.com/eqrion/dash/blob/master/dash/src/vm_internal.h).
 
 Some important instructions are listed below:
 

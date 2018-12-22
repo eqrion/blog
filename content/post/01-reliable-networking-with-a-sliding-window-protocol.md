@@ -18,7 +18,7 @@ If you do research on this topic, you'll find guides that describe all the impor
 
 This was especially true for Sliding Window Protocols. I wrote this to try and provide an end to end guide on how some reliable networking protocols operate. It goes into enough depth to cover most of the implementation details that arise, but code is not actually discussed.
 
-If you are looking for code, the c++ library created along with this article can be found [here](https://github.com/rlhunt/netmod). Hopefully this will provide some help for anyone else seeking to do this in the future!
+If you are looking for code, the c++ library created along with this article can be found [here](https://github.com/eqrion/netmod). Hopefully this will provide some help for anyone else seeking to do this in the future!
 
 <!--more-->
 
@@ -195,6 +195,6 @@ Use a Sliding Window Protocol on top of UDP and either,
 1. Only accept packets in order.
 2. Use a bitfield to track delivery statuses and hold on to packets in memory until all previous packets have been accepted and processed.
 
-You can find the library I created in the process of writing this post [here](https://github.com/rlhunt/netmod/).
+You can find the library I created in the process of writing this post [here](https://github.com/eqrion/netmod/).
 
 Questions, comments, corrections? Leave a comment below!
