@@ -26,7 +26,7 @@ body {
 body {
   background-color: #fafafa;
   font-family: sans-serif;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 th {
   padding: 0.5em;
@@ -51,7 +51,6 @@ a:hover {
 
 .readmore {
   font-family: sans-serif;
-  /*font-style: italic;*/
   text-decoration: unset;
   display: block;
 }
@@ -106,13 +105,14 @@ footer {
 
 .post {
   margin-bottom: 2rem;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
+  color: #333;
 }
 
 .post-title {
-    text-decoration: none;
+  text-decoration: none;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: black;
 }
 .post-title:active {
@@ -121,7 +121,8 @@ footer {
 }
 
 .post-subtitle {
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
   font-size: 1.15rem;
   font-style: italic;
   color: #606060;
