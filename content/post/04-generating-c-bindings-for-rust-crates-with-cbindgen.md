@@ -2,7 +2,7 @@
 date = "2017-08-30T21:51:26-05:00"
 title = "Generating C bindings for Rust crates with cbindgen"
 aliases = [
-  "/posts/generating-c-bindings-for-rust-crates-with-cbindgen/",
+  "/post/generating-c-bindings-for-rust-crates-with-cbindgen/",
 ]
 draft = false
 tags = ["rust", "ffi", "project"]
