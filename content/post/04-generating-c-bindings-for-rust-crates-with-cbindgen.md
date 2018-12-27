@@ -10,9 +10,6 @@ description = "Introducing cbindgen, a project for generating a C/C++ header for
 disqusid = "1150"
 +++
 
-<link href="/css/prism.css" rel="stylesheet" />
-<script src="/js/prism.js"></script>
-
 Rust is a great language for doing tasks normally done in C/C++. While it has a minimal runtime and zero-cost abstractions, it also has guaranteed memory safety and high level language features that make programming easier.
 
 Another neat thing about Rust is its ability to have a C FFI. Rust can be used to rewrite parts of an existing C/C++ application without having to rewrite the whole thing.
@@ -20,6 +17,9 @@ Another neat thing about Rust is its ability to have a C FFI. Rust can be used t
 This means that you can get some of the benefits of Rust, without having to rewrite the whole world (which is often infeasible and tends to introduce new bugs).
 
 <!--more-->
+
+<link href="/css/prism.css" rel="stylesheet" />
+<script src="/js/prism.js" async="true"></script>
 
 There's a project in Firefox with this exact idea called [Oxidation](https://wiki.mozilla.org/Oxidation). I've spent some time working on a related project called [Quantum Render](https://wiki.mozilla.org/Platform/GFX/Quantum_Render).
 
