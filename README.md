@@ -1,3 +1,3 @@
-# dreamingofbits
+# blog.eqrion.net
 
-This repository hosts the content and templates for `https://dreamingofbits.com/`.
+This repository hosts the content and templates for `https://blog.eqrion.net/`.
