@@ -1,6 +1,7 @@
 +++
 title = "Implementing a pin-to-bottom scrolling element with only CSS"
-date = "2019-02-27T5:07:02-06:00"
+date = "2019-03-28T5:08:02-06:00"
+slug = "pin-to-bottom"
 aliases = [
   "/post/pin-to-bottom/",
 ]

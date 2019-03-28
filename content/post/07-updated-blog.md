@@ -1,6 +1,7 @@
 +++
 title = "Updated Blog"
 date = "2018-12-26T21:52:02-06:00"
+slug = "updated-blog"
 aliases = [
   "/post/updated-blog/",
 ]

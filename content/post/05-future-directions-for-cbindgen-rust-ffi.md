@@ -1,7 +1,9 @@
 +++
 date = "2018-10-05T08:08:20-05:00"
 title = "Future directions for cbindgen (rust-ffi)"
+slug = "future-directions-for-cbindgen"
 aliases = [
+  "future-directions-for-cbindgen-rust-ffi/",
   "/post/future-directions-for-cbindgen-rust-ffi/",
 ]
 draft = false

@@ -1,6 +1,7 @@
 +++
 title = "Scroll Anchoring in Firefox 66"
-date = "2019-02-15T5:07:02-06:00"
+date = "2019-03-28T5:07:02-06:00"
+slug = "scroll-anchoring"
 aliases = [
   "/post/scroll-anchoring/",
 ]
