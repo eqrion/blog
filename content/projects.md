@@ -13,4 +13,4 @@ The source for all of my projects can be found on [Github](https://github.com/eq
 * [netmod](https://github.com/eqrion/netmod) - C++ reliable networking protocol experiment
 * [sensor](https://github.com/eqrion/sensor) - a C software rasterizer experiment
 
-This site is made with [Hugo](https://gohugo.io), and you can view the source [here](https://github.com/eqrion/dreamingofbits).
+This site is made with [Hugo](https://gohugo.io), and you can view the source [here](https://github.com/eqrion/blog).
